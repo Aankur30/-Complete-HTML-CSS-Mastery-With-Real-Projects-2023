@@ -1,0 +1,40 @@
+p{
+    color:lightcoral;
+}
+.heading{
+    background-color: aqua;
+}
+#content{
+    text-shadow: 2px;
+    color: brown;
+}
+/* there should be no space between the two class selector until they are decendent of other  */
+.first.second{
+    color:magenta;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.intro #name{
+    color:green;
+    font-size: larger;
+}
+.intro p{
+    color:rgb(41, 41, 98);
+}
+div>p{
+    /* only selects the immediate tags after the div 
+    selects all the tags that are p and once the sequence breaks the style will not be applied to rest of the paragraph  */
+    color:brown;
+    font-size: xx-large;
+}
+/* other combinator selectors */
+div~h2{
+    color:goldenrod;
+}
+/* if want to select the internal h2's of the div then */
+p~h2{
+    color:maroon;
+}
+/* this will be applied to the first h2 only select one element right after the p tag inside the same parent i.e. div */
+p+h2{
+    text-decoration: line-through;
+}

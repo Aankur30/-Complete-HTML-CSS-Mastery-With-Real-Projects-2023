@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.first-box {
+    color: violet;
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+    /* after width and the height the padding comes then the border comes then the margin comes margin creates the difference */
+    padding: 40px;
+    border: 10px solid goldenrod;
+    margin: 20px;
+    /* margin collapse can be seen here */
+}
+
+.second-box {
+
+    color: black;
+    background-color: lightgreen;
+    height: 200px;
+    width: 200px;
+    padding: 40px;
+    border: 10px solid goldenrod;
+    margin: 10px;
+    /* margin brings the gap between the element and the webpage  */
+    /* sometimes the block level margin collapse as which element have bigger margin will overflow over the lesser margin */
+
+}
+
+/* -------------------------------------------------------------- */
+/* height and width of the element */
+/* p {
+    background-color: rebeccapurple;
+    font-size: 30px;
+    width: 200px;
+    /* width:50%;
+    50% of the parent element it is the relative widht with respect to the parent element
+    */
+    /* height:auto;
+    if selected auto so it will increase as the text will increase inside it */
+/* difference between vh,vw,% 
+%- it is relative to the parent element
+vh and vw-will be relative to the screen size you were working on */
+
+
+/* ------------------------------------------------------------------*/
+/* Minimun and Maximum height and width */
+#box {
+    max-width: 800px;
+    min-width: 550px;
+    /* with the help of the max width the content will not be more than of max size and for min width after reaching the min width if you make more zoom in then it will provide the scroll bar below to use it after reaching the limit which was set in the CSS */
+    background-color: aquamarine;
+
+}
+
+/* ----------------------------------------------------------------- */
+
+/* padding */
+/* ------------Important concept----------------------- */
+/* box-sizing: content-box;
+ this is the default in which the content take the height and width of the element specified in the css using height and width but if we do border box then the height and widht will be whole border box which will include padding margin and border  */
+.first-name {
+    background-color: chocolate;
+    color: aqua;
+    height: 200px;
+    width: 200px;
+    padding: 40px 0 0 50px;
+    /* we have the shorthand property can group everything in one padding for example
+    
+    padding:top right bottom left
+    anticlockwise if you want to rememmber*/
+}
+
+/* total height of the border box =top padding + bottom padding+ height of the element */
+/* ------------------------------------------------------------- */
+
+
+/* borders */
+.name1 {
+    border-style: solid;
+}
+
+.name2 {
+    background-color: yellowgreen;
+    color: brown;
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+    border-style: solid dotted dashed double;
+    border-color: aqua red green black;
+    border-width: 5px 6px 7px 8px;
+    /* in the border-style   we can fix the border  style of the 4 sides same as of the padding
+for example
+border-style:solid dotted dashed double;
+can style the four differnt sides */
+    /* there is particular style for the particular side and particular color for the side whichever you want  */
+}
+
+/* --------------------------------------------------------------*/
+
+/* Margin-it is used to create space around the elements.
+it does not count in the total height and width of the element even if it is border box it only takes padding and border  */
+.margin1 {
+    background-color: brown;
+    color: dimgray;
+    height: 200px;
+    width: 200px;
+    padding: 20px 20px 20px;
+    border: 10px solid black;
+    margin: 10px 20px 30px;
+    /* shorthand property can be used to define the margin of left right top and bottom in the same line */
+}
+
+.margin2 {
+    background-color: blueviolet;
+    color: mediumspringgreen;
+    height: 200px;
+    width: 200px;
+    padding: 20px 20px 20px;
+    border: 10px solid royalblue;
+    border-radius: 5px;
+    margin: 30px auto;
+    /* this will make the container at the center of the screen */
+}
+
+/* --------------------------------------------------------------*/
+/* Box sizing- helps to calculate the total width and height of the element 
+
+there are two types of box sizing:-
+1. border-box
+2.contents-box
+*/
+.sizing {
+    background-color: darkolivegreen;
+    color: brown;
+    height: 300px;
+    width: 300px;
+    border: 10px solid black;
+    padding: 10px 10px 20px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    font-size: 29px;
+
+}
+
+.sizing2 {
+    background-color: darkolivegreen;
+    color: brown;
+    height: 300px;
+    width: 300px;
+    border: 10px solid black;
+    padding: 10px 10px 10px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    font-size: 29px;
+}
+
+/* --------------------------------------------------------------*/
+/* Outline
+There is a difference between outline and border 
+1. outline does not contribute in the height and width of the element.
+2.outline can be set inside or outside the element
+3.Outline corners cannot be rounded unlike the borders using the border-radius property.
+*/
+.simple-box {
+    box-sizing: border-box;
+    width: 500px;
+    float: right;
+    /* with float rigth it will go through the right side of the window */
+    margin: 20px;
+    /* border and outline can work together */
+    border: 10px solid navy;
+    outline: 10px solid black;
+    /* even if we have changed border with outline nothing changed but when we inspect the border is not in the element so outline is similar to the border  */
+    outline-offset: 10px;
+    /* by providing the negative value in the offset we can place outline inside the border or inside the element */
+    /* outline has several properties like
+1.outline offset-we can create the space between the border
+ and outline
+ if border was not there with the outline then the offset will create space between the content and the outline 
+2.outline style 
+3.outline width
+4,outline color  */
+    background-color: saddlebrown;
+    color: bisque;
+}
+
+/* --------------------------------------------------------------*/
+/* text in CSS */
+.textinCSS {
+    color: brown;
+    /* color provide color to the text */
+    background-color: yellow;
+    direction: rtl;
+    /* starts from right to left orientation only works at block level not on inline element*/
+    letter-spacing: 3px;
+    line-height: 160%;
+    /* will able to significant change when we increase it over 120% */
+    word-spacing: 20px;
+    /* as the name suggests word spacing provide the space between each word */
+    text-indent: 30px;
+    /* this will indent the first line only */
+}
+
+.spanclass {
+    color: green;
+    background-color: black;
+    direction: rtl;
+    /* didn't work on the inline elements */
+    letter-spacing: 4px;
+    /* property used to increase the space between the characters  can give negative value also*/
+}
+
+.newtext {
+    text-align: justify;
+    /* means it justify or creates no partiality generates equal width */
+    text-decoration: underline;
+    /* we can decorate our text */
+    /* text decoration thickness-  apply the thickness to the text decoration like here is underline
+    other property is font weight property */
+    text-decoration-color: aqua;
+    /* whatever decoration we have provided can provide color to it with this property */
+    text-decoration-style: double;
+    /* every propety will be applied  after appling the decoration  */
+    /* can be applied as shorthand property  */
+    text-shadow: 4px 4px 4px yellowgreen;
+    /* first value will give horizontal shadow which will be left and right position then vertical for top and bottom  and third value will be of blur and last value as color */
+    text-overflow: clip;
+    /* it will clip to the desired area of the text */
+}
+
+.link {
+    text-decoration: none;
+    /* this will remove the underline below the link  */
+}
+
+.transform {
+    text-transform: capitalize;
+    /* can transform the text like here it is all capital
+     */
+    white-space: nowrap;
+    /* the text will be displayed in the single line with nowrap
+     other is pre-same work as pre tag
+     third is pre-line only work at the end of the line breaks*/
+
+}
+
+.vertical {
+    vertical-align: super;
+    /* align the text vertically in many ways */
+}
+
+/* --------------------------------------------------------------*/
+/* Overflow of the text */
+.primary {
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    word-wrap: break-word;
+}
+
+.secondary {
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    overflow-y: hidden;
+    text-decoration: underline solid red;
+    /* overflow can be used as to manage the overflowing text */
+    /* text-last-assign property will used to assign the property for the last   line of the text can be altered with the parent element */
+    text-decoration-skip-ink:all ;
+    /* it will skip the underline where there is downword text like g or y */
+    text-underline-offset:7px ;
+    /* it creates the space between the element and the underline */
+}
+.foot{
+    background-color: mediumblue;
+    color: aqua;
+    text-decoration: solid;
+    text-decoration: underline;
+    text-decoration-color:darkgreen ;
+    text-underline-offset: 9px;
+    /* writing-mode:vertical-lr; */
+    /* writing mode means writing style like i have choosen now vertical left to right  not recommended to use  as not supported by all the browser*/
+    
+}
+/* --------Importand conversion----1em=50px----------------------------- */
+#emp > span{
+text-emphasis-style:"1";
+/* it will show the string which we have typed in the css to the top of each word in the webpage */
+text-emphasis-color: red;
+/* it will simply change the color of the string displayed on the top */
+text-emphasis-position:under;
+/* this will define the position of the emphasis text */
+}
+/* --------------------------------------------------------------*/
+/* ------------lists------------ */
+ul{
+    margin:40px;
+    list-style-type:disc;
+    /* give the type of the list  */
+    list-style-position: inside;
+    /* putting inside will push the list little inside */
+    /* list-style-image: url(wiaend.jpg) provide the image to the list; */
+   
+}
+/* --------------------------------------------------------------*/
+/* changing the color of the marker */
+.mark{
+    margin:100px 100px;
+    background-color: aquamarine;
+}
+/* marker is a psuedo selector and can be used as both list ol and ul lists */
+ol li::marker{
+    /* background-color:red; do not support background color property  */
+    color: red;
+    /* provide the color to the marker */
+    font-size: 100px;
+    /* font size of the marker */
+    content:none;
+    /* in the content property any symbol can be used as a marker */
+}
+summary::marker{
+    color: brown;
+    font-size: larger;
+    content: "$-";
+    /* put any symbol in place of the marker */
+}
+/* --------------------------------------------------------------*/
+/* Tables */
+table{
+    box-sizing: border-box;
+}
+.main-table,table-head,td{
+   border:1px solid black; 
+   border-collapse: separate;
+   /* before this the border will be seperate and after this the border will collapse into each other  default is seperate*/
+   border-spacing: 10px 20px;
+   /* this is used when the border-collapse:seprate property is used 
+   first when will give the the value of the horizontal spacing and other gives vertical spacing*/
+}
+.main-table{
+    caption-side: bottom;
+    /* this will give the title of the caption to the top aur the bottom anywhere */
+    empty-cells: hide;
+    /* it will hide the blank cells in the table */
+    table-layout: auto;
+    /* if put auto so it will increase the table as per the content is increased and if fixed then the content will wrap in the fixed space of the table */
+}
+.table-head,td{
+    height: 100px;
+    width: 600px;
+}
+  /* for changing the alignment */
+  .table-head{
+    text-align: end;
+    /* this will align at the right side  can have many propeties like start */
+    vertical-align: bottom;
+    /* this will align the content at the bottom of the table */
+    padding: 40px;
+    /* this will create the space between the table border and the content */
+    
+  }
+  /* --------------------------------------------------------------*/
+  /* position property
+  THERE ARE 5 PROPERTY 
+  1.Static
+  2.Fixed
+  3.Absolute
+  4.Relative
+  5.Sticky
+  default is static */
+   
+  #position{
+position: relative;
+margin-left: 100px;
+margin-top: 100px;
+left: 50px;
+  }
+  .relative{
+    position: relative;
+    width:400px;
+    height: 200px;
+    border:3px solid red;
+  }
+  .absolute{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+
+    /* this is now 0px from the bottom 
+    and now it is 10px away from the bottom*/
+    /* in position fixed it is fixed in the screen according to the view port */
+    /* using the sticky it will stick to the top after making it 0px even after scrolling it won't go up */
+  }
+  /* --------------------------------------------------------------*/
+  /* overflow in the CSS */
+  .overflow{
+    background-color: cyan;
+    color:brown;
+    width: 400px;
+    height: 100px;
+    /* after applying this much css the content is overflowing and we have to apply the scroll bar */
+    overflow: scroll;
+    /* putting the scroll will provide the scroll bar and default value is visible like it was before applying the overflow */
+    /* can put overflow overflow-x and overflow-y */
+
+  }
+  /* --------------------------------------------------------------*/
+  /* Css float property */
+
+.image{
+    float: right;
+    /* it can float to the right side */
+    margin: 30px;
+}
+.second-para1{
+    clear:left;
+    /* no element is allowed to float around the left side */
+}
+
