@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/*
+.parent{
+    width: 800px;
+    height: 400px;
+    background: deeppink;
+    margin: 0px auto;
+    /* to horizontally center the div element in the browser 
+}
+.child{
+    background-color: darkred;
+    height: 100px;
+    width: chartreuse;
+    /* margin-left: auto;
+    margin-right: auto;
+    make it a shorthand property  */
+    /* margin: 0px auto; */
+    /* to horzontally center the div element */
+/*
+}
+*/
+/* to center the image as it is a inline element first make it block element and make margin 0px auto */
+.par{
+    position: relative;
+    width: 900px;
+    height: 400px;
+    background-color: red;
+    color: chartreuse;
+}
+.right{
+    position: absolute;
+   left:50%;
+   top: 50%;
+    transform:translate(-50%,-50%);
+    /*  after specifying the right property it will aligned in the right side of the parent element*/
+    height: 200px;
+    background-color: brown;
+    border: 2px solid green;
+    padding: 10px;
+}
+/* for centering this element inside the main block using the css transform property */
+.text1{
+    background-color:red;
+    height: 100px;
+}
+.text2{
+    background-color: green;
+    text-align: center;
+    height: 50px;
+    padding-bottom:8px;
+    /* the text will align in the center */
+}

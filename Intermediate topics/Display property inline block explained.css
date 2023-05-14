@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    height: 300px;
+    width: 400px;
+    /* display: block; */
+    /* block level element creates the line break after the content  */
+    display: inline;
+    /* after making it inline then it will come into one line  */
+}
+span{
+    display: block;
+    /* it will come in the next line  because it will make the element inline */
+    
+}
