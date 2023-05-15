@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a:link{
+    color:aqua;
+    /* link color will be aqua  */
+}
+a:visited{
+    color:green;
+    /* then when it will be visited then it will be green */
+}
+a:hover{
+    color:tomato;
+    /* after the hover effect  */
+}
+a:active{
+    color:violet;
+    /* then if the link is voilet   */
+}
+a.first:link{
+    color:aqua;
+    /* link color will be aqua  */
+}
+a.first:visited{
+    color:rgb(128, 105, 0);
+    /* then when it will be visited then it will be green */
+}
+a.first:hover{
+    color:rgb(71, 255, 129);
+    /* after the hover effect  */
+}
+a.first:active{
+    color:rgb(210, 16, 210);
+    /* then if the link is voilet   */
+}
+
