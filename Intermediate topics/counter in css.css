@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 100px;
+    list-style-type: outside;
+}
+ul li::marker{
+    content:"\1F970";
+    /* it will provide the marker to the list  */
+    font-size: 30px;
+}
+.parent{
+    counter-reset: my-counter 0;
+    /* we have to put the inital number when we reset the counter */
+    /* we cna give any value to the counter but there should be no space between them  */
+}
+ .parent h2::before{
+content: counter(my-counter) " ";
+/* we will "  " to give the space between the content of h2 and the counter after counter we are putting the space  */
+counter-increment: my-counter 1;
+/* for the incrementation we have to put positive number if put 1 it get increment by 1 and if 2 it will increment by 2 like 2,4,6,8 like that  */
+/* now we can style the counters */
+color: blue;
+font-size: 50px;
+text-decoration: underline;
+background: linear-gradient(red blue green);
+padding: 10px;
+border:10px solid goldenrod;
+background-color: olive;
+
+}

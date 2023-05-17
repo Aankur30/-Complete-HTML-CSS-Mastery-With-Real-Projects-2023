@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    
+    filter: opacity(0.50);
+    /* filter also contain the opacity property which decides the opacity of the image */
+    /* opacity is the value ranges between 0-1 and 1 is the default value means the image is fully opaque*/
+    /*filter adds the visual effects to the image */
+    filter: drop-shadow(20px 20px 10px green);
+    /* filter: grayscale(2.5); */
+    /* makes the image black and white */
+    filter: hue-rotate(180deg);
+    filter: saturate(150%);
+    filter: sepia(2.5);
+}

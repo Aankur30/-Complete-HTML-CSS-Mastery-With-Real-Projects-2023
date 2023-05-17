@@ -24,14 +24,89 @@ a.first:link{
 }
 a.first:visited{
     color:rgb(128, 105, 0);
-    /* then when it will be visited then it will be green */
+   
 }
 a.first:hover{
     color:rgb(71, 255, 129);
-    /* after the hover effect  */
+  /* using the pseudo selector using the class */
 }
 a.first:active{
     color:rgb(210, 16, 210);
-    /* then if the link is voilet   */
 }
+/* hover can be used not only with the links but with the other elements also */
+/* div{
+    background-color: green;
+    color: brown;
+    padding: 20px;
+    text-align: center;
+    transition: 2s background-color;
 
+}
+div:hover{
+    text-align: center;
+    background-color: red;
+} 
+p{
+    display: none;
+    background-color: grey;
+    padding: 20px;
+    
+} */
+/* comment the above section then use the below code  */
+ div.second:hover p{
+    display: block;
+}
+/* the paragraph should be shown when we hover over the div element content */
+p:empty{
+    /* padding: 20px; */
+    margin: 10px;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+} 
+div:first-child{
+    color:red;
+    /* first child of the element will be red of the body element */
+}
+div.childs strong:first-child{
+    color: violet;
+    /* to select the strong tag using the pseudo and descendent selector 
+    it will select the first child inside the div element */
+   
+} 
+/* div >strong{
+    /*if we remove the greater than sign then it will select the all the strong tags 
+    color: red; 
+}*/
+ /* div.childs > strong-(this will select all the immediate or direct childs which are strong element) */
+
+ div:last-child{
+    background-color: green;
+    color: mediumorchid;
+ }
+ div.last :nth-last-child(2){
+    color: red;
+    /* it will select all the last elements  if we put one  in  value of the function of the nth-last-child  same class of the div  */
+    /* after putting 2 as a value then the second last element will be selected if we put n then nth element from the last will be selected means the first element */
+    /*div.last strong:nth-last-child(2)  - we can specify the type of the last child we want to select*/
+ }
+ div.last strong:nth-child(2){
+    color: green;
+    /* this will select all the nth child of the class last of the div */
+   
+ }
+ div.type{
+    background-color:#fff;
+    }
+ div.type p:first-of-type{
+    
+    color:yellow;
+    /* this will select the first element of the selected child element */
+    /* similarly they have last-of-type which select the last element of the desired element type */
+ }
+ div.type strong:nth-last-of-type(1){
+    text-decoration: line-through;
+    color: hotpink;
+ }
+ /* then they have nth-last-of-type also which select the last of the particular element mentioned only on element will be styled using this pseudo selector
+ same goese for the nth-of-type() will select the first element only of the desired element  */

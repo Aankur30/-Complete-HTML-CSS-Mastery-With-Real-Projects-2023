@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p::before{
+    /* we can put the content before the content of the element */
+    content: "this is the content added before the main content||| ";
+}
+p::after{
+    /* we can put the content after the content of the element */
+    content: "||| this is the content added after the main content ";
+}
+p::first-letter{
+    /* as the name suggests it selects the first letter of the element */
+    color: lawngreen;
+    text-decoration: line-through;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+p::first-line{
+    color: green; 
+
+}
+p::selection{
+    background-color: mediumvioletred;
+    color: navy;
+    /* the css will be applied when the selection of the particular thing can be done using the cursor */
+}

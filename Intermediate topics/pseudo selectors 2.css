@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* root pseudo selector will be applied over the whole body */
+:root{
+    background-color: darkolivegreen;
+    color: lightcoral;
+}
+:target{
+    /* this will select the target of the links here is the paragraph which is the target here */
+    background-color: navajowhite;
+    color: maroon;
+    border: 2px solid black;
+}
+/* pseudo selectors for the forms */
+input:checked{
+    height: 20px;
+    width: 30px;
+    /* this will increase the height and width of the checboxes of the radio and the checkboxes box */
+}
+input:disabled{
+    height: 50px;
+    width: 40px;
+}
+/* now we can apply the styling on the disabled checkboxes or radio buttons */
+input[type="checkbox"]:disabled{
+    width: 100px;
+    height: 100px;
+    /* this supsript box is used to select the particular attribute like i want to select the checkboxes only not the radio buttons o */
+}
+input:enabled{
+    height: 30px;
+    width: 40px;
+    /* similarly here attribute selector should be used like
+    input[type="radio"]:enabled{} can be used to style the specific  */
+}
+input[type=text]{
+    /* a specific attribute can be selected for the styling  */
+    width: 100px;
+    background-color: red;
+    transition: 2s width ,2s background-color;
+}
+input:focus{
+    /* this can also be  */
+    width: 250px;
+    background-color: blueviolet;
+    color: green;
+    /* the css will be applied over the focused input field of the form  */
+}
+input:optional{
+    /* in this also we can be attribute specific */
+    background-color: white;
+    /* seperate style for th optional field */
+    color: black;
+}
+input[name=fname]:read-only{
+    background-color: black;
+    color: hotpink;
+    width: 200px;
+    height: 150px;
+}
+input[name=email]:valid{
+background-color: aqua;
+color: green;
+}
+input[type-number]:out-of-range{
+  border: 2px solid green;  
+}
+input[type =number]:in-range{
+    border: 3px solid violet;
+}
+/* :not(h2){
+    background-color: black;
+    color:goldenrod;
+   
+    this pseudo selector only not selects the elements written inside its function 
+} */

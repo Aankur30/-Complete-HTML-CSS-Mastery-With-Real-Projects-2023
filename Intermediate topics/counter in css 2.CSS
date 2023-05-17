@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    counter-reset:full-counter 0;
+}
+.parent h1::before{
+    content: counter(full-counter) " ";
+    counter-increment: full-counter 1;
+    color: blueviolet;
+    border: 8px solid brown;
+    border-radius: 2px solid;
+    background-color: chartreuse;
+}
+.parent h1{
+    counter-reset: half-counter 0;
+
+}
+.parent h4::before{
+    content: counter(full-counter) "."counter(half-counter) " ";
+    counter-increment: half-counter 1;
+    display: inline-block;
+    color: green;
+    border: 10px solid red;
+    border-radius: 2px solid;
+    background-color: goldenrod;
+
+}

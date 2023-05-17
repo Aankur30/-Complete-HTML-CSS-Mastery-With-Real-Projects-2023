@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*   */
+img{
+   
+    height: auto;
+    width: 100%;
+    float: left;
+    max-width: 235px;
+    margin: 0px auto;
+    filter: blur(5px);
+    filter: contrast(120%);
+    /* this will apply the filter in the image like 
+    1.Brightness
+    2.Opacity
+    3.Blur
+    4.Drop-shadow
+    */
+    filter: drop-shadow(100px,100px,900px green);
+    /* horizontal shadow,vertical shadow,blur value , it will create the shadow on the side of the boxes */
+}
