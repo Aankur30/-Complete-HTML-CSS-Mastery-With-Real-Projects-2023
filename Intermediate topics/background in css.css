@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* background color - for changing the color of the background of the element */
+/* backgound image property is used to place an image at the bakcground of the element and we can also add not only the image but also the gif images as well */
+p{
+    background-color: red;
+}
+div#image{
+    height: 900px;
+    width: 500px;
+    background-color: green;
+background-image: url(wiaend.jpg);
+background-repeat: no-repeat;
+/* using round it will incorporate the maximum images it can have with slight change in the aspect ratio of the image */
+/*  using no-repeat this will prevent the image from repetiton */
+background-position:center;
+/* this will describe the position of the image 
+can be given in percentage also if provided 0% 0% then it will be placed at the top left side of the screen */
+/* background-size: 250px 250px; */
+background-size: cover;
+/* first value is width and second is height */
+/* ing cover it will try to cover the whole area given to th image by stretching it */ 
+
+/* and if the image is bigger than the area than the image will be squezzed  */
+
+/* using the contain property it will fit the image even if it has to leave some blank spaces reverse from cover property */
+/* we can also put the %value for the image and it will adjust according to the element width and height */
+box-sizing:border-box;
+/*   there are 3 things in this 
+1. Border box- the content will start from the border 
+2.Padding-box- the content will start from the padding 
+3. content box- it will leave the border then padding and then the content will be displayed in the website*/
+border: 20px solid black;
+background-clip: content-box;
+background-attachment: scroll;
+/* default value of this property is local */
+}

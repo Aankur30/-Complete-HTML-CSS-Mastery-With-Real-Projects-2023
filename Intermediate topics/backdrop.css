@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.filter{
+    position: relative;
+    height: 600px;
+    width: 700px;
+    background:url(wiaend.jpg) no-repeat center/cover;
+}
+.inner{
+    color: yellow;
+}
+.filter .inner{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:2px solid red;
+    backdrop-filter: blur(5px);
+}
+/* backdrop property is used to style the some part not the whole like here we have placed the image so in image we can style some part of the image */
+/* after putting the backdrop filter we can apply any filter to that specific area */
+/* difference between the filter and the backdrop property is that backdrop applies filter on the background not on the foreground
+2. filter works on the current element while backdrop works on the parent element of the child  */
