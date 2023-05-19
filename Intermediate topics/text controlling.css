@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#para{
+    
+    height: 200px;
+    background-color: fuchsia;
+    /* word-wrap: break-word; */
+    /* it only break the large words and leave the blank space into the paragraph */
+    word-break: break-all;
+    /* it breaks the smalls words as well and make them fit in the box */
+    text-align: justify;
+    /* equality for all the text by providing the proper space */
+    text-align-last:justify;
+    /* this property states that where to align the last line of the paragraph whether it is left right or start */
+}

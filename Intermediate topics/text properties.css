@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* basically the child will inherit the properties of the parent */
+.parent{
+    font-size: 20px;
+}
+.change-me{
+    padding: 40px;
+    padding: 10px;
+    border: 10px solid red;
+    /* if you apply css to the parent it will automatically applied to the child element */
+    font-size: larger;
+    /* default is medium */
+    font-weight: 100;
+    font-family: cursive;
+    /* its make the weigth thick and thin it varies from 100-900 and other keyword values */
+}
+/* if there is a parent and the parent has again a parent then for the child element it will inherit the property of the immediate parent */
+.change-me2{
+    padding: 10px;
+    border: 10px solid red;
+    font-style: oblique;
+    /* for styling the font */
+    /* if you apply css to the parent it will automatically applied to the child element */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font used for the text and it has many fonts so if browser dosen't support one it supports others */
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    column-count: 4;
+    /* this will divide the text in the four columns */
+    column-gap: 25px;
+    /* can change the gap between the column */
+    column-width: 250px;
+    column-rule-style: solid;
+    /* this will put the dotted line between the columns */
+    column-rule-width: 13px;
+    /* width of the rule between the column */
+    column-rule-color: fuchsia;
+    /* color of the rule  */
+    /* can be done in shorthand property like 
+    column-rule: width style and color
+     */
+     height: 200px;
+     column-fill: balance;
+     /* it balance one column at a time first it will fill the first column then the second and the remaining will be filled in the next columns */
+     background-color: yellowgreen;
+     column-width: 120px;
+     /* this is the minimum width if the content is more to fit in this width and in no of columns then the browser will start reducing the number of columns */
+     
+
+}
+#spaning{
+column-span: all;
+}
+/* it spans inside the column though it is not working  */

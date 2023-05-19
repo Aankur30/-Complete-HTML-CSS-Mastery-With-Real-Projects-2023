@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.gradient{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black; 
+    background:linear-gradient(to  right ,red 0%,green 30%,yellow 60%,pink 100%);
+      /* Linear gradient is the mixture of the colors and for the gradient minimum 2 colors should be available and the gradients applies from top to bottom */
+      /* if want to specify the direction first put to keyword and then direction of start here to right is written so it will start from right to left */
+      /* for the stopping of the colors we can provide px value ,degree value,or % value  at the end of the each color can use combinations either   */
+      /* starting of the first color is default from the 0 and the last color is 100 */
+
+}
+/* midpoint of the transition */
+.gradient2{ 
+    margin: 0px auto;
+    float: right ;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black; 
+    background:linear-gradient(to  right ,red 5%,green 30%,45%,yellow 60%, transparent 80%,pink 100%);
+    /* if you put comma between two colors and specify the length value that will be the midpoint of both colors */
+    /* can also put one color to transparent so it will change into the background color */
+}
+.gradient3{ 
+    margin: 0px auto;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black; 
+    background:-moz-repeating-linear-gradient(to  right ,red 5%,green 30%, transparent 20%,pink 10%);
+    /* for repeating last stopping value should be less than 100% */
+}
+.gradient4{ 
+   
+    width: 300px;
+    height: 300px;
+    border: 5px solid black; 
+}
+.gradient4{
+    background: radial-gradient(circle at top left,red 0% 20%, green 30% 55%,fuchsia 49% 67%,yellow );
+}
+/* in this also color stops can be applied after the color   */
+/* in radial we can put starting and ending color stop at the same point at the end of each color respectively */
+/* can specify the shape and the position can put negative values also */
+
+/* dart thrower can be made through this radial gradient */

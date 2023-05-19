@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#para{
+    height: 300px;
+    width: 300px;
+    border: 5px solid red;
+    margin: 20px;
+    text-shadow: 3px 0px 2px green,3px 1px 4px red,3px 0px 2px yellow;
+    /* value of the text shadow is horizontal and other is vertical 
+    by default in horizontal the letters are pushed on the right side and we put negative values it will be towards the left side and third value is the blur value and last is color */
+    box-shadow:3px 0px 2px green,3px 1px 4px red,3px 0px 2px yellow ;
+    /* same value propeties for box shadow as it was for the text shadow */
+    
+}
+/* can add multiple shadow values seperated by the comma */

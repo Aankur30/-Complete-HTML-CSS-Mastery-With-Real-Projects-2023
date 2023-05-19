@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin:  0 100px;
+}
+.gradient{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 4px solid brown;
+}
+.gt-1{
+    background-image:conic-gradient(red,blue,yellow);
+}
+/* position of the gradient using "at "  keyword*/
+.gt-2{
+    background-image:conic-gradient(at  center,red,blue,yellow);
+}
+/* percentage value can also be used to define the position of the color  */
+.gt-3{
+    background-image:conic-gradient( at 30% 40%,red,blue,yellow);
+}
+/* color stops  if we put the exact percentage one color after another then it will become the solid colors not the gradients
+if you put one value then it will set the gradient starting position 
+*/
+.gt-4{
+    background-image:conic-gradient(red 0% 30%,blue 30% 70%,yellow 70% 100%);
+}
+/*  */
+.gt-5{
+    background-image:conic-gradient(red,blue,yellow);
+    border-radius: 50%;
+}
+.gt-6{
+    background-image:conic-gradient(from 90deg at 75px 75px,red,blue,yellow);
+    border-radius: 50%;
+}
+/* if to make disappear of the line then put any starting color at the ending or the ending color at the starting */
+.gt-7{
+    background-image:conic-gradient( yellow,red,blue,yellow);
+    border-radius: 50%;
+}
+/* can also put degrees as the starting of the transition */
+.gt-8{
+    background-image:conic-gradient(red,blue,yellow);
+}
