@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: rebeccapurple;
+    text-align: center;
+     line-height: 400px;
+     margin: 100px;
+     perspective: 600px;
+     perspective-origin: bottom left;
+     /* this is the origin of the perspective from where we see the transformation
+     we can also put the length values of the in the pixel and it consists of two values for the horizontal and vertical values */
+}
+.child{
+    width: 400px;
+    height:  400px;
+    background-color: red;
+    transform: rotateX(0deg);
+    transition: all 4s;
+}
+.child:hover{
+    transform: rotateX(80deg);
+}

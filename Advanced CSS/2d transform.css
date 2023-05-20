@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+div{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: fuchsia;
+    color: green;
+    text-align: center;
+    line-height: 100px;
+    font-size: x-large;
+}
+.transform{
+    transform-origin: left top;
+    /* it has value of the horizontal and vertical can be given location of origin as top-left,top-right,bottom-left,bottom-right */
+    /* the tranform rotate is used after this property it is just used to displace the origin of the element by default it is center center */
+
+    /* transform: rotate(40deg); */
+    
+    /*  this property will make rotate in clockwise by 40deg if want counter-clockwise then specify the angle in -ve */
+    /* transform:skewX(20deg); */
+    /* skewing means bottom x axis will move 20deg to the right at the horizontal and top x axis will move to the left side by 20deg  */
+    /* the default value of the skew starts from the bottom left side */
+    /* transform: translateX(400px); */
+    /* translation means the movement of the element according to the x or the y axis by the particular length unit */
+    /* without putting translate x or y we can use translate x and y in the one property together same goes for the skew property */
+    transform: scaleX(2);
+    transform: scaleY(1.5);
+    /* it is the scale value(in percentage of in number) of the element if we put like here is 2 the length will be twice the  original same as y and z */
+
+}
