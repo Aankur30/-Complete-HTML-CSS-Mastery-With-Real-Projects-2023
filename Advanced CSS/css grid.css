@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    background-color: black;
+    height: 100vh;
+    margin: 20px auto;
+    display: grid;
+    /* size can be provided in css length units or pixels */
+    /* grid-template-rows:100px  100px 100px; */
+    /* special css length unit for the grid template rows and colums */
+    grid-template-rows:100px 100px 100px;
+    grid-template-columns:100px 100px 100px ;
+    /* fractional part like 1fr will be 1 fraction part of the whole grid column width */
+    /* this is used to give the measurements to the rows and columns of the grid */
+    /* row-gap: 20px; */
+    /* this will create the space between the rows of the grid and in the gap the background color will be visible */
+    /* column-gap: 20px; */
+    /* same for the column gap */
+    /* shorthand for the row and column gap is gap first value will be for rows and second for columns */
+    justify-content:center ;
+    /* it will show the grid on the left side */
+    /* direction: rtl; */
+    /* direction starts from rtl */
+    align-content: flex-start;
+    /* it will align the content in the center of the grid of the box */
+    /* if both are the flex-start it will be at the left top corner if jstuify content if center it will show the changes in the x-axis while align content will show changes at the y axis+
+    */
+
+
+}
+.item{
+    color: gray;
+    padding: 20px;
+    font-size: 25px;
+}
+.item-1{
+    background-color: brown;
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:4 ; */
+    /* these four lines of the css are used to move the 1st grid to the place of the 9th grid when 1st take the place of 9th 2nd takes place of the 1st and after that all will be shifted 1 grid forward */
+    /* its shorthand property is 
+    grid column: start/end
+    grid row: start/end
+    other method is 
+    grid area: grid row start/grid column start/grid row end/grid column end  */
+     grid-area:3/3/4/4;
+     /* this property can be used as a rowspan and colspan in the tables */
+}
+.item-2{
+    background-color: red;
+}
+.item-3{
+    background-color: pink;
+}
+.item-4{
+    background-color: violet;
+    grid-column: span 2;
+    grid-row: span 2;
+    /* there is also a property for the spanning */
+    z-index:1 ;
+    /* it defaults value is 0 if we make 1 it make the 1 pile up content below the surface to come out on the surface */
+}
+.item-5{
+    background-color: yellow;
+}
+.item-6{
+    background-color: orange;
+}
+.item-7{
+    background-color: gold;
+}
+.item-8{
+    background-color: lightcoral;
+}
+.item-9{
+        background-color: magenta;
+}

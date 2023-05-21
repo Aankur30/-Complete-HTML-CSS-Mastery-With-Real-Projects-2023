@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.responsive{
+    --secondary-color:red;
+}
+div p{
+    color:var(--secondary-color);
+}
+#outside{
+    color: var(--secondary-color);
+}
+/* the variable are made for the fixed scope like it will work only on the contents of the responsive class not the outside of it */
+/* for the whole page declare all the variable inside the root peseudo selector */

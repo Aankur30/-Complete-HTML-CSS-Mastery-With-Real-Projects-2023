@@ -1,0 +1,39 @@
+/* transitions are used to change the property value smoothly over the given duration */
+*{
+    margin: 0;
+    padding: 0;
+}
+#first{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    text-align: center;
+    line-height: 300px;
+    font-size: larger;
+    color: green;
+    background-color: yellow;
+    transition-property: width, height;
+/* in the transition property the properties which are assigned will change and  for that below hover effect is applied to how much transition will take place */
+transition-duration: 2000ms;
+/* it will take 2 second in transition  */
+/* 5s=5000ms */
+/* transition-timing-function: ease-out; */
+/* other properties are ease-in-out */
+
+/* transition-timing-function: steps(5); */
+/* can also add second value after steps is number then starting and ending */
+/* it directly starts and ends when step-start property is added
+step(5) the transition will end in the 10 steps in 5 it will get at the max then in 5 steps it gets back in 5 steps */
+transition-timing-function: cubic-bezier(0.5, 0.82, 1, 1);
+/* it will be fast at the start at and slow at the end  as it is 1
+1 means slow and smaller value means fast*/
+transition-delay: 300ms;
+/* the animation will start after the dalay time  */
+/* shorthand property- property name,duration, timing function, transition delay */
+}
+#first:hover{
+    /* the values of the transition property should be different */
+    width: 500px;
+    height: 500px;
+    background-color: rgb(142, 226, 16);
+}

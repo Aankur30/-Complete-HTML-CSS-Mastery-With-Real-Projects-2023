@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#animate{
+    border: 2px solid red;
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    /* for the animation its name should be added and the duration for which the animation should be performed */
+    animation-name: animate-me;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    /* the number of times the animation will run  after loading the screen */
+    animation-delay: 2s;
+    /* after the 2s the animation will start  */
+    animation-direction: alternate;
+    /* for the animation to be alternate first the normal animation and the backwards animation will run  similiarly there is reverse and alternate-reverse*/
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* this is similarly the cubic bezier values of transition 
+    same the steps animation also */
+
+    /* shothand property 
+     name, duration ,timing function,delay ,direction */
+
+}
+/* animation means gradually changing from one style to another */
+@keyframes animate-me{
+    /* two keywords are from and to */
+    from{
+        transform: translateX(0px);
+        border-radius: 0px;
+        background-color: blue;
+    }
+    25%{
+        transform: translateX(300px);
+        border-radius: 5px;
+        background-color: brown;
+    }
+    50%{
+        transform: translateX(600px);
+        border-radius: 5px;
+        background-color: rgb(24, 199, 158);
+    }
+    75%{
+        transform: translateX(900px);
+        border-radius: 5px;
+        background-color: rgb(161, 234, 5);
+    }
+    to{
+        transform: translateX(0px);
+        border-radius: 5px;
+        background-color: rgb(226, 12, 126);
+    }
+}
+
+#box{
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+    top: 0%;
+    left: 0px;
+    margin: 50px;
+    animation: change-position 2s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    /* the animation will start at original and end at 100%  amd in backwords it starts with the 0% in the delay time */
+    /* note:: it is not necessary that 0% and original value should be same all the time */
+
+    
+   
+}
+@keyframes change-position {
+    0%{
+        top: 0%;
+        left:50px;
+        background-color: chartreuse;
+    }
+    25%{
+        top: 10%;
+        left:400px;
+        background-color: fuchsia;  
+    }
+    50%{
+        top: 20%;
+        left:600px;
+        background-color: green;  
+    }
+    75%{
+        top: 15%;
+        left:800px;
+        background-color: red;  
+    }
+    100%{
+        top: 5%;
+        left:1000px;
+        background-color: brown;  
+    }
+
+    
+}
