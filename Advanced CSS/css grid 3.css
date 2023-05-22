@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 800px;
+    height: 800px;
+    margin: 0px auto;
+    display: grid;
+    background-color: gold;
+    grid-template-rows: 200px 200px ;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* can select the auto columns */
+    grid-auto-rows: 100px;
+
+    /* in this maxcontent property is there means the it will consume the maximum stretch of the grid according to the content inside of it */
+    grid-auto-flow: row;
+    /* default is row can be change into columns */
+}
+/* even after putting the height more than the grid it is not using it as the auto property is removed from template rows and the grid auto row value is also fixed for the rows  */
+div > *{
+    background-color: salmon;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+/* can put justify content and align items to change the positon of the items inside the element */

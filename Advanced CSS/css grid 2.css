@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 800px;
+    height: 600px;
+    margin: 0px  auto;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    background-color: saddlebrown;
+    /* here in the container we have done the grid with the help of the lines but it can be done with the help of the grid-line-name 
+.container{
+    display:grid;
+    grid-template-rows:[header-start]1fr 1fr [main-start] 1fr [main-end] 1fr [article-start] 1fr [article-end] 
+*/
+/* so like this you can name any line in the row template same can be done in column template  */
+grid-template-areas: "header header header header"
+                         "sidebar main1 main1 main1"
+                         "sidebar main1 main1 main1"
+                         "sidebar article-1 article-2 article-3"
+                         "ads1 ads1 ads1 ads1"
+                         "footer footer footer footer";
+/* these are "" 6rows created  */
+grid-auto-rows: 100px;
+}
+
+div.container > *{
+background-color: aqua;
+font-size: 20px;
+text-align: center;
+padding: 15px;
+}
+/* another way of creating the grid is easier than before */
+header.header{
+    /* grid-column: 1/-1; */
+    grid-area: header;
+
+}
+aside.sidebar{
+    /* grid-row: 2/6; */
+    grid-area: sidebar;
+}
+main.main-page{
+   /* grid-area: 2/2/5/4; */
+   /* grid area is used to select both row and column at the same time  */
+   grid-area: main1;
+}
+aside.ads{
+    /* grid-row: -2/-5; */
+    grid-area: ads1;
+}
+ .other-article-1{
+    /* grid-column: 2/3;
+    grid-row: 5/6; */
+    grid-area: article-1;
+}
+ .other-article-2{
+    /* grid-column: 3/4;
+    grid-row: 5/6; */
+    grid-area: article-2;
+}
+ .other-article-3{
+    /* grid-column: 4/5;
+    grid-row: 5/6; */
+     grid-area: article-3;  
+}
+footer.footer{
+    
+    /* grid-column: 1/-1;
+    grid-row: 6/7; */
+    grid-area: footer;
+}
+/* this is the best way to make the grid */
