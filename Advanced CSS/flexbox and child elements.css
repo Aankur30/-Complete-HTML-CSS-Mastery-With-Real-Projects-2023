@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.upper{
+    display: flex;
+    background-color: aquamarine;
+    height: 600px;
+    flex-flow: row wrap;
+}
+.upper > div.item{
+    background-color: green;
+    /* width: 100px; */
+    /* height: 100px; if you want to use the property align-self then we have to remove the height */
+    color: #fff;
+    margin: 5px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    /* flex-grow: 1; */
+    align-self: center;
+    /* it will align the items in the center  */
+    flex-basis: 25%;
+    /* if you are using flexbox use flex-basis instead of width to make the width of the flexboxes */
+    
+}
+.upper :nth-child(1){
+    flex-grow: 2;
+    /* flex-s shrink: 1; */
+    order: 2 !important;
+}
+.upper :nth-child(3){
+    flex-grow: 3;
+    order: 3;
+    /* the box 3 will be at the last because all the element has 0 as an order hence the box-3 has higher value hence placed last */
+}

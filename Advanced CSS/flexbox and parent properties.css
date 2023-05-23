@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.upper{
+    display: flex;
+    background-color: brown;
+    flex-direction: row;
+  
+   
+    /* flex direction is default row */
+    /* if we make column it will arange column wise there is column revere it will arrange in the reverse order */
+    direction: ltr;
+    /* default is ltr means left to right and other is rtl means right to left */
+     justify-content: space-evenly;
+     align-items: baseline;
+     /* using justify-content and align items we can make the movement of the items in the cross plain like x-y axis */
+     flex-wrap: wrap;
+     flex-flow: row wrap;
+     align-content: flex-start;
+
+}
+.upper > div.item{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    color: blue;
+    margin: 5px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
