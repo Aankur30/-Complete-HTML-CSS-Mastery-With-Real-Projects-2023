@@ -1,0 +1,65 @@
+/* @import url('convert\ website\ for\ prints\ media2.css') print; */
+/* by this the css page can be linked together in one css page */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+   
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,100px);
+    grid-template-areas:
+     "header header header header header header"
+    "menu   menu   main main main right2"
+    "menu   menu   main main main right2"
+    "menu   menu   main main main right2"
+    "menu menu ads ads ads ads"
+    "footer footer footer footer footer footer" ;
+    gap: 10px;
+    background-color: lightseagreen;
+    padding: 10px;
+}
+.grid-container > div {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;  
+
+}
+.item1{
+    grid-area: header;
+}
+.item2{
+    grid-area: menu ;
+}
+.item3{
+    grid-area: main;
+}
+.item4{
+    grid-area: right2;
+}
+.item5{
+    grid-area: ads;
+}
+.item6{
+    grid-area: footer;
+}
+/* another way of using the media queries inside the same css file */
+@media print{
+    .grid-container > .item3{
+        grid-column: 1/-1;
+        grid-row: 1/7;
+    }
+    /* for spanning the contents throughtout the column */
+    
+    .item1,
+    .item2,
+    .item4,
+    .item5,
+    .item6{
+        display: none;
+    }
+    /* in this media queries the content of the media can be added r */
+}

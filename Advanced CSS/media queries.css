@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ /* @media screen  is used for screens like computer tablets mobiles  */
+ /* print media type is for the printers  */
+ /* speech media type is for the screen readers that read the screen out loud like in the microsoft edge */
+ /* all for all the media type */
+ p{
+    color: red;
+font-size: 12px;
+ }
+ @media  print{
+p{
+    color: black;
+    font-size: 30px;
+    border: 5px solid green;
+    border-radius: 10px;
+}
+ }
+ @media screen ,speech{
+    p{
+        color: blue;
+        font-size: 40px;
+    }
+ }
+ /* it also has the min-width and many other media feature in min-width if the width is bigger than the min then only it will work */
+ 
+ @media only screen and (max-width:1200px){
+    /* if we apply another same max-width media feature after this then its max-width value should be less otherwise it will not work so it has to be given in the decreasing order */
+    p{
+        color: mediumaquamarine;
+        font-size: 23px;
+        border: 3px solid violet;
+        border-radius: 20px;
+    }
+    /* this means that the media queries will be applied till the maximum width of 1200px then will get back to normal style */
+ }
+ /* for merging both the media queries use comma to merge 
+ like
+ @media print ,screen{} */
+
+
+ /* important  */
+ /* we have to give the default values of the screen or anything before the media queries to be applies otherwise the media queries will not work if the default styles are written after the media queries */
