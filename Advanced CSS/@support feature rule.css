@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1504px;
+    margin:10px;
+    background-color: green;
+}
+@supports (display:grid){
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px;
+}
+}
+.item{
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: honeydew;
+    text-align: center;
+   
+}
+/* to check whether any feature supports to the browser or not if it supports it will return the positive response and the code inside will be executed */
+@supports  not (display:grid){
+    .container{
+display: block;
+    }
+}

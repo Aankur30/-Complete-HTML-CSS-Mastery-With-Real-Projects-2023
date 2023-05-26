@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 100px;
+    background: linear-gradient(red,blue,green);
+    /* this linear gradient will not show if you put background-color property */
+}
+@media only screen and (height:500px){
+    .item{
+background: linear-gradient(green,yellow);
+    }
+}
+@media only screen and (width:500px){
+    .item{
+background: linear-gradient(red,yellow);
+    }
+}

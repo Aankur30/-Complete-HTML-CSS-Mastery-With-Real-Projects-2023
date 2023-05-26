@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.item{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+    background: linear-gradient(red ,yellow,black);
+}
+@media  screen and (width:400px) and (height:400px){
+    .item{
+background-color: cyan;
+    }
+}
+@media (width:400px){
+    .item{
+background: linear-gradient(blue,yellow,purple);
+    }
+}
+/* 1. use and operator between media type and media feature 
+For Example:
+@media screen and (width:300px){}
+2.And between two media features
+For Example:
+@media screen and (width:300px)and (min-height:400px){}
+*/
+
+/* use of the comma or OR operator in this one of the condition is true then it will be true */
+
+/*  the only media operator using is used with the media type always and after this and operator must be used */
+
+/* for supporting all the things we should write all keyword
+For Example:
+@media only all and (widht:300px){} */
+@media only all and (max-width:300px){
+    .item{
+        background:linear-gradient(green ,yellow ,red);
+    }
+}
+/* not logical operators reverse the conditions  */
+@media not all and (max-width:800px){
+    .item{
+        background:linear-gradient(purple,cyan,aqua);
+    }
+}

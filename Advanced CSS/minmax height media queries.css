@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    background-color: teal;
+    /* seprate properties are applied on each of the box */
+}
+/* @media screen and (min-width: 500px)
+{
+    div:first-of-type{
+background-color: rebeccapurple;
+    }
+    /* the color of the first box is changed */
+/* }  */
+@media screen and (min-height:200px) and (max-height:299px){
+    div:nth-of-type(3){
+        background-color: rebeccapurple;
+    }
+}
+@media screen and (min-height:300px) and (max-height:399px) {
+    div:nth-of-type(2){
+        background-color:greenyellow ;
+        /* from 300-399 thsi styles will be applied */
+    }
+}
+@media screen and (min-height:400px) and(max-height:500px){
+    div:nth-of-type(1){
+        background-color: goldenrod;
+    }
+}

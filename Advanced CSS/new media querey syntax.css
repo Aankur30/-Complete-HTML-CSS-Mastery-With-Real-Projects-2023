@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    border: 2px solid greenyellow;
+    color: red;
+    background-color: magenta;
+    line-height: 300px;
+    border-radius: 20px;
+    transition: all 1s;
+
+} 
+/* @media only screen and (width:500px){
+    .box:hover{
+        border-radius: 50%;
+    }
+}  this is the old syntax to write media queries now we use math operators*/
+@media only screen and (width=500px) /* (height >=500px this is the mathematical form of the min-height)*/{
+    .box:hover{
+        border-radius: 50%;
+    }
+}

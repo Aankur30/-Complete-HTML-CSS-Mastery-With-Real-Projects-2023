@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    display: flex;
+    background-color: blueviolet;
+}
+.parent > div{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 100px;
+    background-color: yellow;
+}
+@media only screen and (orientation:landscape){
+    body{
+        background-color: red;
+        justify-content: center;
+        /* it will align items to the main axis */
+    }
+.parent{
+    flex-direction: row;
+}
+}
+@media only  screen and ( orientation:portrait){
+    body{
+background-color: yellow;
+    }
+    .parent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .parent > div {
+width: 200px;
+    }
+}

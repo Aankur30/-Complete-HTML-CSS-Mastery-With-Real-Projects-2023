@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#aspect{
+    background-color: green;
+    height: 300px;
+    width: 300px;
+}
+@media (max-aspect-ratio:1/1){
+    #aspect{
+        background-color: red;
+    }
+}
+/* we can put max-aspect-ratio and min-aspect-ratio for the media queries */

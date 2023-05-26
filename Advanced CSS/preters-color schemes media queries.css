@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* :root{ */
+    /* color-scheme: light-dark; */
+/* } */
+#light-dark{
+    height: 300px;
+    width: 200px;
+    background: linear-gradient(green,blue, yellow);
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 4px darkgray,-8px -8px 4px darkgray;
+    margin: 100px;
+    transition: all .9s;
+}
+#light-dark:hover{
+    box-shadow: 0px 0px 0px maroon;
+}
+@media only screen and (prefers-color-scheme:dark){
+    #light-dark{
+        background: linear-gradient(rgba(0, 0, 255, 0.581),rgba(255, 0, 0, 0.592) ,rgba(255, 255, 0, 0.427));
+    }
+}
+@media only screen and (prefers-color-schemelight){
+    #light-dark{
+        background: linear-gradient(rgba(0, 255, 204, 0),rgba(160, 218, 13, 0.592) ,rgba(177, 92, 18, 0.427));
+    }
+}

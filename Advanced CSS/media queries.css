@@ -43,3 +43,14 @@ p{
 
  /* important  */
  /* we have to give the default values of the screen or anything before the media queries to be applies otherwise the media queries will not work if the default styles are written after the media queries */
+ 
+ 
+ /* we can also add like this will create a range for different devices 
+ @media screen and (min-width:200px) and (max-widht:320px){
+    color:red;
+  } */
+  
+  /* @media only screen and (min-width:200px)and (max-width:500px){
+    background-color:green;
+   }
+    */
