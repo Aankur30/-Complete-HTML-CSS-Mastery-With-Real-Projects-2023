@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#style-scrollbar{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    border: 2px solid green;
+    padding: 10px;
+    line-height: 30px;
+    overflow: auto;
+}
+#style-scrollbar::-webkit-scrollbar{
+width: 1em;
+background-color: rebeccapurple;
+
+}
+#style-scrollbar::-webkit-scrollbar-track{
+    background-color: black;
+    border-radius: 10px;
+    background: linear-gradient(green,blue,yellow);
+}
+#style-scrollbar::-webkit-scrollbar-thumb{
+    background-color: blue;
+   border-radius: 10px;
+   
+}
+#style-scrollbar::-webkit-scrollbar-track-piece{
+    background-color: rgb(214, 193, 165);
+    /* can be added as the track-piece in place of the track-piece  */
+}
+#style-scrollbar::-webkit-scrollbar-button{
+    background-color: black;
+}

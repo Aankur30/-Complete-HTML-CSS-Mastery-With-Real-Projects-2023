@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form,progress{
+    margin: 0px 100px;
+}
+form > input:not([type="range"]){
+    width: 40px;
+    height: 40px;
+}
+form > input[type="checkbox"]:first-child{
+    accent-color: lime;
+}
+form > input[type="range"]{
+    accent-color: rgb(84, 3, 3);
+}
+progress{
+    accent-color: green;
+}
+.parent{
+    height: 400px;
+    width: 600px;
+    color:brown;
+    border:2px solid currentColor;
+    margin: 0px auto;
+    text-align: center;
+}
+.parent a{
+    display: inline-block;
+    margin-top: 10px;
+    color: currentColor;
+    /* currentcolor is used to make the color of other things is same as the currentcolor of the parent div */
+
+    
+}

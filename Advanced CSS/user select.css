@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height: 400px;
+    width: 400px;
+    border: 2px solid tomato;
+    background-color: lawngreen;
+    user-select: none;
+    /* user will not able to select the data from the webpage */
+}
+/* carret color */
+form{
+    margin: 100px ;
+}
+form > input [type="text"]{
+    caret-color: green;
+}
+ form  textarea{
+    caret-color: mediumaquamarine;
+}

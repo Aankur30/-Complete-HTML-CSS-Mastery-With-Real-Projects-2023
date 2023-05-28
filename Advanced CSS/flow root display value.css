@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 3px solid royalblue;
+    overflow: auto; 
+}
+  
+/* }
+.container:after{
+    content: "";
+    display: block;
+    clear: both;
+    apart from overflow to auto it can be done with the help of these three lines of code
+} */
+.container{
+    display: flow-root;
+    /* this is the best way to make the overflow of the element  */
+}
+.float-me{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    float: left;
+}
+/* hint */
+/* for checking the feature for any browse you can check can_i_use_that.com */

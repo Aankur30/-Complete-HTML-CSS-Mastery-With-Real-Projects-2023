@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.menu{
+    background-color: transparent;
+    text-align: center;
+position: sticky;
+top: 0px;
+margin: 0 auto;
+}
+.menu > a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    color: black;
+    background: linear-gradient(green ,yellow ,transparent,blue);
+    border-radius: 45%;
+    box-shadow: 10px 10px 10px gray;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+
+}
+section#home{
+    background-color: rgb(218, 129, 129);
+}
+section#team{
+    background-color: aqua;
+}
+section#about-us{
+    background-color: gold;
+}
+section#contact{
+    background-color: rgb(236, 236, 124);
+}

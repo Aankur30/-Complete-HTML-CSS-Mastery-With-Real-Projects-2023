@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.changeme{
+    color: black;
+    background: red;
+    height: 200px;
+    width: 200px;
+    direction: rtl;
+    line-height: 200px;
+    border: 5px solid black;
+    border-radius: 5px ;
+    /*  whenever there is a language which starts at the left side we give left margin or padding properties for it so we want whenever we reverse the direction like from right to left like Arabic so the padding and margin should also get changed accordingly*/
+    /* so to implement this we use logical properties */
+    padding-inline-start: 50px;
+    /* with inline-start we can apply padding in the start of dirction of the start of the text */
+    padding-inline-end: 30px;
+    /* same here can be applied at the end */
+    /* same for top and bottoom padding there we use  */
+    padding-block-start: 30px;
+    padding-block-end: 30px;
+}
