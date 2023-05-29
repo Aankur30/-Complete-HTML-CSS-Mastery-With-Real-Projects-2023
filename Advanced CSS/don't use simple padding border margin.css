@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.change{
+    margin: 0 auto;
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    border-inline-start-color: violet;
+    border-inline-start-style: solid;
+    border-inline-start-width: 10px;
+    border-inline-end-width: 10px;
+    border-inline-end-color: green;
+    border-inline-end-style: solid;
+    /* like here we have written the shorthand property for the block start and end so this way we can also make inline end and start */
+    border-block-start: 10px solid red;
+    border-block-end:10px solid black ;
+    /*block is used for the vertical border start is at top and end is at bottom    */
+    /* for the border radius in terms of the logical properties */
+    border-start-end-radius: 10px;
+    /* it means the top end  radius if the direction of the content is ltr  it means top right and in rtl it means top left */
+}
+
+.LTR{
+    direction: ltr;
+    background-color: aqua;
+}
+.RTL{
+    direction: rtl;
+    background-color: honeydew;
+}
