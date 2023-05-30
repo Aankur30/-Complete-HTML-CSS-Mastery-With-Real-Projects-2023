@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+    margin: 0px auto;
+}
+img{
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: 0px  auto;
+    /* can specify in any length for the clip path can be used in mixture also */
+    /* clip-path: circle(50% at 50% 50%); */
+    /* this includes the value first is how much to make the circle and then after the at keyword we will decide from where like where should be center so here it is in the middle */
+
+    /* after the at two values are the horizontal and the vertical values which define the center */
+    /* clip-path: inset(30% can use calc inside these values also20% 15% 10% ); */
+    /* for making rectange we have to use the inset value and give the four values seperately for each edge */
+    /* when we put 30% percent means the body will clip the all only 30% will remain from all sides */
+    clip-path: polygon();
+}

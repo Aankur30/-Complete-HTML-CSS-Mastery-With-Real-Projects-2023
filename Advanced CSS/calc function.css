@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* use for the mathematical calculation inside the value of any property */
+.box{
+    width: calc(200px * 2);
+    /* if there is no gap between the values and the operator the calc functionn will not work */
+    background-color: greenyellow;
+    /* we can align items at the center */
+}
+/* can be used variable inside the var */

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+.bix{
+    /* use of min fuction that it takes the minimum value given in it  */
+    width: min(50%,300px);
+    margin: 0 auto;
+    height: 300px;
+    padding: clamp(20px 50px 10vh);
+    /* clamp sets the range for the property like 20px is the lowest it can get and 50px is the highest wherease 10vh is the middle value hence it requires 3 values */
+    border: 2px solid black;
+    color: red;
+    background-color: brown ;
+    /* this can be given in any of the properties */
+}
