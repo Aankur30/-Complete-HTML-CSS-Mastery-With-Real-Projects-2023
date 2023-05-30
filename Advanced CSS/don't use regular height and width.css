@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.change{
+    background-color: yellowgreen;
+    inline-size: 200px;
+    /* inline size is used for the width  */
+    block-size: 300px;
+    /* block size is used for height */
+    margin: 10px;
+    /* using height and widht without using height and widht we will use logical properties */
+
+}
+.LTR{
+    direction: ltr;
+}
+.RTL{
+    direction: rtl;
+}
+.vertical{
+    writing-mode: vertical-rl;
+}
+
+/* for the third box it is more than the other two because it is like rotated 90deg towards the ground */
+/* min-widht has also other alternative of logical properties like for this it is min-inline-size */
+/* min-height and max-heght it will be min/max-block-size */

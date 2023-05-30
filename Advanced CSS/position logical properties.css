@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    background-color: aqua;
+    position: relative;
+    margin-block-end: 30px;
+}
+.wrapper i{
+    font-size: xx-large;
+    position: absolute;
+    inset-block-start: 40px;
+    /* inset-block-start for the top and inset-block-end for the bottom */
+    inset-inline-end: 100px;
+    /* for the right we use inset-inline-end and for left inset-inline-start */
+}
+.wrapper.ltr{
+    direction: ltr;
+    /* we will not give the space between the classes otherwise it will treat other class as the child or descendent of its own class */
+}
+.wrapper.rtl{
+    direction: rtl;
+}
+/* the shorthand property for it is
+inset-inline:where we have to put two values for the start and the end
+same there is inset-block where we have to do the same */
+/* with onnly using the inset we can use all property but it will be physical ones not the logical properties */
+/* other logical properties are 
+1.overflow-inline and block
+2.text-align-start and end */

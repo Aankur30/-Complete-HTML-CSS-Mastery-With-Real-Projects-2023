@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.blend-me{
+    width:100vw;
+    height: 100vh ;
+    position: absolute;
+    background-color:blue;
+    /* blend one photo over the other */
+}
+.blend-me2{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    background-color: coral;
+    mix-blend-mode: lighten;
+}
+.parent{
+    position: relative;
+}
+.circle{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    position:absolute;
+    text-align: center;
+    line-height: 400px;
+    font-size: 40px;
+    right: 300px;
+}
+.circle-1{
+    background-color: red;
+    left: 0%;
+    right:100%;
+}
+.circle-2{
+    background-color: lightgreen;
+}
+.circle-3{
+    background-color: brown;
+    left: 0px;
+    top: 400px;
+}
