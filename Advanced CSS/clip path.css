@@ -21,5 +21,22 @@ img{
     /* clip-path: inset(30% can use calc inside these values also20% 15% 10% ); */
     /* for making rectange we have to use the inset value and give the four values seperately for each edge */
     /* when we put 30% percent means the body will clip the all only 30% will remain from all sides */
-    clip-path: polygon();
+    clip-path: polygon(0% 50% ,50% 0%,10% 100% , 0% 10%);
+    /* first point at the top left is 0 and 0 means at the corner then 100% and 0% means x length is full and y length is 0 named as top right corner then bottom right corner is both 100 % then bottom left corner where x is 0 and y is 100
+    Remember it like cartesian plane */
+    transition: all .5s;
+}
+/* img:hover{
+    clip-path:polygon(0% 0% ,100% 0%,100% 100%,0% 100%);
+} */
+.image{
+    float: left;
+    border: 2px solid red;
+    border-radius: 6px;
+    clip-path: circle();
+    shape-outside: circle(50% at 50% 50%);
+    /* can make any shape */
+    /* how the content will align outside the circle */
+    shape-margin: 3px;
+    /* margin to the outer boundaries of the circle */
 }

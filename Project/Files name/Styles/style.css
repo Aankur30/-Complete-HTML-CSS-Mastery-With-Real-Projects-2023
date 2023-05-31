@@ -1,0 +1,75 @@
+/* making the variables so that it can be used throught the project */
+:root{
+--purple:rgb(129,64,150);
+/* color ranges from 0-255 */
+--pink:rgb(248,50,146);
+--gradient:linear-gradient(90deg,var(--purple),var(--pink));
+scroll-behavior: smooth;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+
+}
+*::selection{
+    color: #fff;
+    background-color: var(--pink);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1rem 0.5rem 1rem rgb(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+header a.logo img{
+width: 40px;
+height: 40px;
+object-fit: cover;
+}
+header .navbar ul{
+    display: flex;
+    /* to make all the items a row */
+    list-style: none;
+
+}
+header .navbar ul li{
+    height: 40px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+header .navbar a{
+    height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    margin: 0px 2px;
+    color: var(--purple);
+    line-height: 23px;
+
+}
+header .navbar li:hover a,
+header .navbar ul li:first-of-type  a{
+    color: #fff;
+}
+header .navbar li:hover ,
+header .navbar ul li:first-of-type{
+    background: var(--gradient);
+}
+header .navbar ul:hover > li:not(:hover){
+    background-color: #fff;
+}
